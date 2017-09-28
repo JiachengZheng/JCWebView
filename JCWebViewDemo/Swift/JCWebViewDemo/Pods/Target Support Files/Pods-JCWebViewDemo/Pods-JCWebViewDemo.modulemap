@@ -1,0 +1,6 @@
+framework module Pods_JCWebViewDemo {
+  umbrella header "Pods-JCWebViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
