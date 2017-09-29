@@ -75,7 +75,6 @@
     webView.navigationDelegate = self;
     webView.allowsLinkPreview = NO;
     webView.backgroundColor = [UIColor whiteColor];
-    webView.opaque = NO;
 
     [webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     [webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
@@ -85,7 +84,6 @@
 -(void)initUIWebView{
     UIWebView *webView = [[UIWebView alloc] initWithFrame:self.bounds];
     webView.backgroundColor = [UIColor whiteColor];
-    webView.opaque = NO;
     webView.delegate = self;
     webView.allowsInlineMediaPlayback = YES;
     webView.keyboardDisplayRequiresUserAction = NO;
