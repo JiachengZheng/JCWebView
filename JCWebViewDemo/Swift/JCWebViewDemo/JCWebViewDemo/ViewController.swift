@@ -57,7 +57,6 @@ class ViewController: UIViewController {
         let webView = UIWebView(frame: frame)
         webView.autoresizingMask = [UIViewAutoresizing.flexibleWidth,UIViewAutoresizing.flexibleHeight]
         webView.allowsInlineMediaPlayback = true
-        webView.isOpaque = false
         webView.backgroundColor = UIColor.white
         return webView
     }
@@ -72,7 +71,6 @@ class ViewController: UIViewController {
         config.userContentController = contentController
         
         let webView = WKWebView(frame: frame)
-        webView.isOpaque = false
         webView.backgroundColor = UIColor.white
         webView.allowsBackForwardNavigationGestures = true
         
